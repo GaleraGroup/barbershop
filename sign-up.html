@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- правильный viewport тэг -->
+    <title>Borodinski - barbershop</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="page-header">
+        <a href="index.html" class="page-header__logo">
+            <picture>
+                <source media="(min-width: 1200px)" srcset="img/svg/logotype-desktop.svg">
+                <source media="(min-width: 768px)" srcset="img/svg/logotype-tablet.svg">
+                <img class="page-header__logo-image" src="img/svg/logotype-mobile.svg" alt="Барбершоп Бородинский логотип">
+            </picture>
+        </a>
+
+        <nav class="main-nav main-nav--closed">
+            <div class="main-nav__wrapper">
+                <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть
+                        меню</span></button>
+                <div class="main-nav__wrapper">
+                    <ul class="main-nav__list site-list">
+                        <li class="site-list__item site-list__item--active"><a>Главная</a></li>
+                        <li class="site-list__item "><a href="works.html">Наши работы</a></li>
+                        <li class="site-list__item"><a href="sign-up.html">Записаться</a></li>
+                        <li class="site-list__item"><a href="#contacts_ancor">Контакты</a></li>
+                        <li class="site-list__item"><a href="htmlacademy.ru/">HTML Academy</a></li>
+                    </ul>
+                    <ul class="main-nav__list user-list">
+                        <li class="user-list__item"><a href="login.html" class="user-list__login">
+                                <svg class="user-list__login-icon" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16"
+                                    viewBox="0 0 16 16">
+                                    <image id="login.svg" class="cls-1" width="16" height="16"
+                                        xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAyUlEQVQ4jYWTzQrCQAyEv5biL3gX9B0EPXnwID67V6+CzyB4UBRqqUxJQdpNOlC2Jcl0JslmdV3jIANOwNjeu/jqKbxqg1csqLaIFAhzIAe6SfreA5MhBa8gJgsNu4cpsAzi+RDBG9gBm0hiYU3KHJ8lsLb4xSM42pnqZtujlZ09EiXMIol/WKSUiuAczHoLjICn5fVUiuAe/FXFDyuuUgnRHmiMN+Aa+YrG+BkobuxEBOGOt32LLCjhYFZSO6KLFhIIGrGXUwHlD0DMJrAktGJgAAAAAElFTkSuQmCC" />
+                                </svg>
+                                Войти</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <h1 class="visually-hidden">Барбершоп "Бородинский" - истинно мужская классика</h1>
+    <section class="form-sign-up">
+        <div class="form-sign-up__wrapper">
+            <div class="form-sign-up__title-wrapper title__wrapper">
+                <h2 class="form-sign-up__title title">Запись на стрижку</h2>
+                <a href="index.html" class="form-sign-up__button button button--white">На главную</a>
+            </div>
+            <form action="#" id="form" class="form">
+                <div class="form-sign-up__name-fields">
+                    <input class="form-sign-up__input-text" type="text" placeholder="Фамилия" name="soname">
+                    <input class="form-sign-up__input-text" type="text" placeholder="Имя" name="name">
+                    <input class="form-sign-up__input-text" type="text" placeholder="Отчество" name="middle-name">
+                </div>
+                <div class="form-sign-up__contacts-fields">
+                    <input class="form-sign-up__input-text" type="tel" placeholder="Контактный телефон" name="tel">
+                    <input class="form-sign-up__input-text" type="email" placeholder="Контактный e-mail" name="e-mail">
+                </div>
+                <div class="form-sign-up__add-info">
+                    <textarea class="form-sign-up__input-text form-sign-up__input-textarea" wrap="soft" placeholder="Доп. информация для мастера"></textarea>
+                </div>
+
+
+                <h3 class="form-sign-up__select-title">Выберите модель бороды:</h3>
+                <div class="form-sign-up__beard-radio">
+                    <p> 
+                        <svg height="100" width="100" class="form-sign-up__radio-svg">
+                            <circle cx="50" cy="50" r="25" stroke="#e8e1d9" stroke-width="1" fill="#ffffff" />
+                            <circle cx="50" cy="50" r="9" stroke="#e8e1d9" stroke-width="1" fill="#ffffff" class="sub-circle"/>
+                         </svg>
+                        <input type="radio" name="beard" value="admiral" id="admiralBeard" class="form-sign-up__input-radio" checked>
+                        <label for="admiralBeard"><span>адмирал</span></label>
+                        <img src="img/svg/sign-up/beard-1.svg" alt="Борода адмирал">
+                    </p>
+                    <p>
+                        <svg height="100" width="100" class="form-sign-up__radio-svg">
+                            <circle cx="50" cy="50" r="25" stroke="#e8e1d9" stroke-width="1" fill="#ffffff" />
+                            <circle cx="50" cy="50" r="9" stroke="#e8e1d9" stroke-width="1" fill="#ffffff" class="sub-circle"/>
+                         </svg>
+                        <input type="radio" name="beard" value="lumberjack" id="lumberjackBeard" class="form-sign-up__input-radio">
+                        <label for="lumberjackBeard"><span>лесоруб</span></label>
+                        <img src="img/svg/sign-up/beard-2.svg" alt="Борода лесоруба">
+                    </p>
+                    <p>
+                        <svg height="100" width="100" class="form-sign-up__radio-svg">
+                            <circle cx="50" cy="50" r="25" stroke="#e8e1d9" stroke-width="1" fill="#ffffff" />
+                            <circle cx="50" cy="50" r="9" stroke="#e8e1d9" stroke-width="1" fill="#ffffff" class="sub-circle"/>
+                         </svg>
+                        <input type="radio" name="beard" value="polar" id="polarBeard" class="form-sign-up__input-radio">
+                        <label for="polarBeard"><span>полярник</span></label>
+                        <img src="img/svg/sign-up/beard-3.svg" alt="Борода полярника">
+                    </p>
+                    <p>
+                        <svg height="100" width="100" class="form-sign-up__radio-svg">
+                            <circle cx="50" cy="50" r="25" stroke="#e8e1d9" stroke-width="1" fill="#ffffff" />
+                            <circle cx="50" cy="50" r="9" stroke="#e8e1d9" stroke-width="1" fill="#ffffff" class="sub-circle"/>
+                         </svg>
+                        <input type="radio" name="beard" value="boyar" id="boyarBeard" class="form-sign-up__input-radio">
+                        <label for="boyarBeard"><span>боярин</span></label>
+                        <img src="img/svg/sign-up/beard-4.svg" alt="Борода боярина">
+                    </p>
+                    <p>
+                        <svg height="100" width="100" class="form-sign-up__radio-svg">
+                            <circle cx="50" cy="50" r="25" stroke="#e8e1d9" stroke-width="1" fill="#ffffff" />
+                            <circle cx="50" cy="50" r="9" stroke="#e8e1d9" stroke-width="1" fill="#ffffff" class="sub-circle"/>
+                         </svg>
+                        <input type="radio" name="beard" value="sage" id="sageBeard" class="form-sign-up__input-radio">
+                        <label for="sageBeard"><span>мудрец</span></label>
+                        <img src="img/svg/sign-up/beard-5.svg" alt="Борода мудреца">
+                    </p>
+                    
+                </div>
+
+
+                <!-- this -->
+                <h3 class="form-sign-up__select-title">Дополнительные услуги:</h3>
+                <div class="form-sign-up__additional-service">
+                    <p> 
+                        <input type="checkbox" value="paint-beard" id="formPaintBeard" class="form-sign-up__additional-service__checkbox">
+                        <label for="formPaintBeard"><span>Подкрасить бороду</span></label>
+                    </p>
+                    <p>
+                        <input type="checkbox" value="twist-mustache" id="formTwistMustache" class="form-sign-up__additional-service__checkbox">
+                        <label for="formTwistMustache"><span>Накрутить усы</span></label>
+                    </p>
+                    <p>
+                        <input type="checkbox" value="comb-beard" id="formCombBeard" class="form-sign-up__additional-service__checkbox">
+                        <label for="formCombBeard"><span>Причесать бороду</span></label>
+                    </p>
+                    <p>
+                        <input type="checkbox" value="trim" id="formTrim" class="form-sign-up__additional-service__checkbox">
+                        <label for="formTrim"><span>Подровнять виски</span></label>
+                    </p>
+                    <p>
+                        <input type="checkbox" value="remove-gray-hair" id="formRemoveGrayHair" class="form-sign-up__additional-service__checkbox">
+                        <label for="formRemoveGrayHair"><span>Убрать седину</span></label>
+                    </p>
+                    <p>
+                        <input type="checkbox" value="polish-bald-head" id="formPolishBaldHead" class="form-sign-up__additional-service__checkbox">
+                        <label for="formPolishBaldHead"><span>Отполировать лысину</span></label>
+                    </p>    
+                </div>
+                <button type="submit" class="form-sign-up__submit button button--brown">Отправить заявку</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <a name="contacts_ancor" class="visually-hidden"></a>
+        <div class="contacts">
+            <address class="contacts__addr">
+                <b class="footer__name-org">Барбершоп Бородинский</b>
+                <p class="footer__adress">г. Санкт-Петербург, ул. Большая<br /> Конюшенная 19/8</p>
+            </address>
+            <div class="block-link"><a href="tel:+78125556666">+7 (812) 555-66-66</a></div>
+        </div>
+
+        <div class="social">
+            <div class="social__inner">
+                <h3 class="social__inner-title">Давайте дружить!</h3>
+                <div class="social__block social__block--vk">
+                    <img src="./img/vk-icon.png" alt="" class="social__block__img">
+                </div>
+                <div class="social__block social__block--fb">
+                    <img src="./img/facebook-icon.png" alt="" class="social__block__img">
+                </div>
+                <div class="social__block social__block--inst">
+                    <img src="./img/insta-icon.png" alt="" class="social__block__img">
+                </div>
+            </div>
+        </div>
+        <div class="developer">
+            <b class="developer__title">Разработано:</b>
+            <div class="block-link"><a href="">HTML ACADEMY</a></div>
+        </div>
+    </footer>
+
+
+    <!-- Окно регистрации-->
+    <div class="autorization visually-hidden ">
+        <form action="#" class="autorization__form">
+            <h2 class="autorization__title">Личный кабинет</h2>
+            <span class="autorization__desc">Введите свой логин и пароль, чтобы войти</span>
+            <input type="text" class="autorization-field autorization__login">
+            <input type="password" class="autorization-field autorization__password">
+            <div class="autorization__options">
+                <label class="autorization__label">
+                    <input type="checkbox" class="checkbox">
+                    <span class="checkbox__span"></span>
+                    Запомните меня
+                </label>
+                <a href="#" class="autorization__forgot">Я забыл пароль</a>
+            </div>
+            <div class="autorization__buttons">
+                <button class="button button--enter">Войти</button>
+                <button class="button button--close">Закрыть</button>
+            </div>
+        </form>
+    </div>
+
+
+    <script src="./js/modules/advantage.js"></script>
+    <script src="./js/modules/toggle.js"></script>
+    <script src="./js/modules/autorization.js"></script>
+    <script src="./js/modules/radio.js"></script>
+    <script src="./js/modules/nav.js"></script>
+</body>
+
+</html>
