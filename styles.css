@@ -2006,7 +2006,7 @@ body {
   top: 6px;
   width: 22px;
   height: 16px;
-  background: url(../../src/img/svg/sign-up/accept.svg);
+  background: url(img/svg/sign-up/accept.svg);
 }
 .form-sign-up__submit {
   margin: 0 auto;
