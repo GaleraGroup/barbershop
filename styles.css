@@ -29,14 +29,14 @@ body {
 }
 @media (min-width: 768px) {
   body {
-    background: #292929 url("../img/bb-tablet.jpg") no-repeat 50% 0;
+    background: #292929 url("img/bb-tablet.jpg") no-repeat 50% 0;
     background-size: 1439px auto;
     background-position: center -120px;
   }
 }
 @media (min-width: 1200px) {
   body {
-    background: #292929 url("../img/bb-desktop.jpg") no-repeat 50% 0;
+    background: #292929 url("img/bb-desktop.jpg") no-repeat 50% 0;
     background-size: 100% auto;
   }
 }
